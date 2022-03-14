@@ -1,3 +1,5 @@
+# 列一个list记录找到的最优解方便复用就行
+
 import collections
 
 n, m, k, t = list(map(int,input().split()))
