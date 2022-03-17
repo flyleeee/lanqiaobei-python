@@ -19,12 +19,12 @@
 # 不知道为什么上面的通不过 真nm离谱
 import os
 import sys
-
+import collections
 # 请在此输入您的代码
 word = input()
-d = {}
+d = collections.defaultdict(int)
 for ii in word:
-    d[ii] = d.get(ii, 0) + 1
+    d[ii] += 1
 l = sorted(sorted(d.items()), key = lambda x: x[1], reverse = True)
 
 print(l[0][0])
